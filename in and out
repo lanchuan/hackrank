@@ -1,0 +1,53 @@
+C 64位输出请用printf("%lld") 
+#include <stdio.h>
+int main() {
+    int a,b;
+    while(scanf("%d %d",&a, &b) != EOF)//注意while处理多个case
+        printf("%d\n",a+b);
+    return 0;
+}
+C++ 64位输出请用printf("%lld") 
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    while(cin >> a >> b)//注意while处理多个case
+        cout << a+b << endl;
+}
+JAVA，注意类名必须为Main, 不要有任何package xxx信息
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        while (in.hasNextInt()) {//注意while处理多个case
+            int a = in.nextInt();
+            int b = in.nextInt();
+            System.out.println(a + b);
+        }
+    }
+}
+C#
+public class Program {
+  public static void Main() {
+    string line;
+    while ((line = System.Console.ReadLine ()) != null) {//注意while处理多个case
+      string[] tokens = line.Split();
+      System.Console.WriteLine(int.Parse(tokens[0]) + int.Parse(tokens[1]));
+    }
+  }
+}
+Python
+import sys 
+for line in sys.stdin://注意for处理多个case
+    a = line.split()
+    print int(a[0]) + int(a[1])
+JavaScript
+var readline = require('readline');
+const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+});
+rl.on('line', function(line){
+   var tokens = line.split(' ');
+    console.log(parseInt(tokens[0]) + parseInt(tokens[1]));
+});
