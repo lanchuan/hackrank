@@ -11,17 +11,14 @@ def isPrime(a):
     return True
 b=2
 j=1
-while number<10001:
+while number<n:
     if isPrime(b):
         B.append(b)
         number+=1
-        if number>=m and number<=n:
+        if number>=m:
             if j%10!=0:
                 print b,
-                j+=1
             else:
                 print b
-                j+=1
+            j+=1
     b+=1
-    if number>n:
-        break
